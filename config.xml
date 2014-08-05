@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<filename>SampleTPCC</filename>
+	<init_name>init</init_name>
+	<tear_down_name>tearDown</tear_down_name>
+	<benchmark_prefix>TPCC_</benchmark_prefix>
+	<transaction_mix>
+		<TPCC_NewOrderTransaction_mix_ratio>0.98</TPCC_NewOrderTransaction_mix_ratio>
+		<TPCC_PaymentTransaction_mix_ratio>1.1</TPCC_PaymentTransaction_mix_ratio>
+		<TPCC_StockLevelTransaction_mix_ratio>0.11</TPCC_StockLevelTransaction_mix_ratio>
+		<TPCC_OrderStatusTransaction_mix_ratio>0.11</TPCC_OrderStatusTransaction_mix_ratio>
+		<TPCC_DeliveryTransaction_mix_ratio>0.11</TPCC_DeliveryTransaction_mix_ratio>
+	</transaction_mix>
+	<duration>180</duration>
+	<interval>10</interval>
+	<MPL>10</MPL>
+	<think_time>0</think_time>
+	<user_model>mix</user_model>
+	<single_function>TPCC_PaymentTransaction</single_function>
+	<result_per_thread>true</result_per_thread>
+</Configuration>
